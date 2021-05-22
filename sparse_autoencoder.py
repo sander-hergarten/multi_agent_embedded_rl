@@ -10,7 +10,7 @@ class sparse_autoencoder_model_flat(tf.keras.Model):
         super(sparse_autoencoder_model_flat, self).__init__()
         
         self.kl_weight = kl_weight
-        self.sparsity_factor= sparsity_factor
+        self.sparsity_factor = sparsity_factor
         self.input_size = input_size
         self.dense_layers = [] 
         self.embed_layer_number = math.ceil(len(self.dense_layers)/2) 
